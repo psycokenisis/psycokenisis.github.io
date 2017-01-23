@@ -10,8 +10,7 @@
     "unit": "karma start test/unit/karma.conf.js --single-run",
     "test": "npm run unit",
     "lint": "eslint --ext .js,.vue src test/unit/specs",
-    "serve-firebase": "npm run build && ./node_modules/.bin/firebase serve",
-    "deploy-firebase": "npm run build && ./node_modules/.bin/firebase deploy"
+    "deploy-github-pages": "npm run build && git subtree push --prefix dist origin master",
   },
   "dependencies": {
     "vue": "^2.1.0"
