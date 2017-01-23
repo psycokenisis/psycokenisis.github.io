@@ -10,7 +10,7 @@
     "unit": "karma start test/unit/karma.conf.js --single-run",
     "test": "npm run unit",
     "lint": "eslint --ext .js,.vue src test/unit/specs",
-    "deploy-github-pages": "npm run build && git subtree push --prefix dist origin master"
+    "deploy-github": "sh ./scripts/deploy.sh"
   },
   "dependencies": {
     "vue": "^2.1.0"
