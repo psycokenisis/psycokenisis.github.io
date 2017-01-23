@@ -2,13 +2,13 @@
 a place I call home
 
 ### Branches
-`master` is used by github as the source branch for the page hosting.
-`development` is used as the primary branch where development occurs.
+- `master` is used by github as the source branch for the page hosting.
+- `development` is used as the primary branch where development occurs.
+
 When a deployment is required, simply execute `npm run deploy` from the `development` branch.
 Under the hood, this will build and export the `/dist` directory into the `master` branch, which then allow it to be served via GitHub :)
-`npm run deploy` is only necessary whenever a deployment is required.
 
-> A Vue.js project
+`npm run deploy` is only necessary whenever a deployment is required.
 
 ## Build Setup
 
