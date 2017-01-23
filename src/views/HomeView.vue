@@ -5,7 +5,7 @@
       <main class="mdl-layout__content">
         <div class="page-content mdl-grid">
           <div class="mdl-cell mdl-cell--12-col">
-            Collection of random things
+            This is my home page
           </div>
         </div>
       </main>
