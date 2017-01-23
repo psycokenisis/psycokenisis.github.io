@@ -13,6 +13,17 @@ DISTRIBUTION_DIRECTORY='dist'
 
 npm run build
 
+# Check if there are any changes which might need to be commited and prevent deployment
+# http://stackoverflow.com/questions/5139290/how-to-check-if-theres-nothing-to-be-committed-in-the-current-branch
+if [ "$(git status --porcelain)" ];
+then
+  git status
+  echo "###"
+  echo "### DEPLOYMENT FAILED. Git state not clean. Fix and try again"
+  echo "###"
+  exit 1;
+fi
+
 # Create the subtree
 git subtree split --prefix ${DISTRIBUTION_DIRECTORY} -b ${TARGET_DEPLOYMENT_BRANCH}
 
