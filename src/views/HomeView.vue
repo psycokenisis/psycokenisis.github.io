@@ -1,7 +1,7 @@
 <template>
   <div id="home-view" v-mdl>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-drawer-button">
-      <external-header></external-header>
+      <compact-header></compact-header>
       <main class="mdl-layout__content">
         <div class="page-content mdl-grid">
           <div class="mdl-cell mdl-cell--12-col">
@@ -16,12 +16,12 @@
 
 <script>
 import { mapGetters } from 'vuex';
-import ExternalHeader from './../components/layout/ExternalHeader';
+import CompactHeader from './../components/layout/CompactHeader';
 import CompactFooter from './../components/layout/CompactFooter';
 
 export default {
   components: {
-    ExternalHeader,
+    CompactHeader,
     CompactFooter,
   },
   data() {
