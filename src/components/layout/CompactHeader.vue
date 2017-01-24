@@ -30,7 +30,6 @@ export default {
     ...mapGetters([
     ]),
     title() {
-      console.log(this.$route.meta);
       return this.$route.meta.title || '';
     },
   },
